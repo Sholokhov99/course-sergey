@@ -1,0 +1,127 @@
+
+Date: 21 июня 2020 г. 23:43
+ file is not a database
+not an error
+Void ChangePassword(Byte[])
+   в System.Data.SQLite.SQLite3.ChangePassword(Byte[] newPasswordBytes)
+   в System.Data.SQLite.SQLiteConnection.ChangePassword(Byte[] newPassword)
+   в System.Data.SQLite.SQLiteConnection.ChangePassword(String newPassword)
+   в SQLiteQuery.Config.Connect() в D:\Course\SQLiteQuery\Config.cs:строка 48
+   в SQLiteQuery.SQL.Select.Post(String sql) в D:\Course\SQLiteQuery\SQL\Select.cs:строка 26
+   в SQLiteQuery.SQL.Select.GetChapters() в D:\Course\SQLiteQuery\SQL\Select.cs:строка 171
+   в Course.Views.UsersControls.Slide.LoadChapters() в D:\Course\Course\Views\UsersControls\Slide.xaml.cs:строка 66
+------------------------------------------------------------
+
+Date: 21 июня 2020 г. 23:43
+ Процесс не может получить доступ к файлу "D:\Course\Course\bin\Debug\database.db", так как этот файл используется другим процессом.
+Void WinIOError(Int32, System.String)
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в System.IO.File.OpenRead(String path)
+   в SecurityModule.Backup.<>c__DisplayClass15_0.<Start>b__0() в D:\Course\SecurityModule\Backup.cs:строка 68
+------------------------------------------------------------
+
+Date: 21 июня 2020 г. 23:47
+ file is not a database
+file is not a database
+System.Data.SQLite.SQLiteStatement Prepare(System.Data.SQLite.SQLiteConnection, System.String, System.Data.SQLite.SQLiteStatement, UInt32, System.String ByRef)
+   в System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   в System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   в System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   в System.Data.SQLite.SQLiteDataReader.NextResult()
+   в System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   в System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   в System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   в SQLiteQuery.SQL.Select.Post(String sql) в D:\Course\SQLiteQuery\SQL\Select.cs:строка 30
+   в SQLiteQuery.SQL.Select.GetChapters() в D:\Course\SQLiteQuery\SQL\Select.cs:строка 171
+   в Course.Views.UsersControls.Slide.LoadChapters() в D:\Course\Course\Views\UsersControls\Slide.xaml.cs:строка 66
+------------------------------------------------------------
+
+Date: 21 июня 2020 г. 23:47
+ Процесс не может получить доступ к файлу "D:\Course\Course\bin\Debug\database.db", так как этот файл используется другим процессом.
+Void WinIOError(Int32, System.String)
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в System.IO.File.OpenRead(String path)
+   в SecurityModule.Backup.<>c__DisplayClass15_0.<Start>b__0() в D:\Course\SecurityModule\Backup.cs:строка 68
+------------------------------------------------------------
+
+Date: 21 июня 2020 г. 23:47
+ file is not a database
+file is not a database
+System.Data.SQLite.SQLiteStatement Prepare(System.Data.SQLite.SQLiteConnection, System.String, System.Data.SQLite.SQLiteStatement, UInt32, System.String ByRef)
+   в System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   в System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   в System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   в System.Data.SQLite.SQLiteDataReader.NextResult()
+   в System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   в System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   в System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   в SQLiteQuery.SQL.Select.Post(String sql) в D:\Course\SQLiteQuery\SQL\Select.cs:строка 30
+   в SQLiteQuery.SQL.Select.GetChapters() в D:\Course\SQLiteQuery\SQL\Select.cs:строка 171
+   в Course.Views.UsersControls.Slide.LoadChapters() в D:\Course\Course\Views\UsersControls\Slide.xaml.cs:строка 66
+------------------------------------------------------------
+
+Date: 21 июня 2020 г. 23:47
+ Процесс не может получить доступ к файлу "D:\Course\Course\bin\Debug\database.db", так как этот файл используется другим процессом.
+Void WinIOError(Int32, System.String)
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в System.IO.File.OpenRead(String path)
+   в SecurityModule.Backup.<>c__DisplayClass15_0.<Start>b__0() в D:\Course\SecurityModule\Backup.cs:строка 68
+------------------------------------------------------------
+
+Date: 21 июня 2020 г. 23:50
+ file is not a database
+file is not a database
+System.Data.SQLite.SQLiteStatement Prepare(System.Data.SQLite.SQLiteConnection, System.String, System.Data.SQLite.SQLiteStatement, UInt32, System.String ByRef)
+   в System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   в System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   в System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   в System.Data.SQLite.SQLiteDataReader.NextResult()
+   в System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   в System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   в System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   в SQLiteQuery.SQL.Select.Post(String sql) в D:\Course\SQLiteQuery\SQL\Select.cs:строка 30
+   в SQLiteQuery.SQL.Select.GetChapters() в D:\Course\SQLiteQuery\SQL\Select.cs:строка 171
+   в Course.Views.UsersControls.Slide.LoadChapters() в D:\Course\Course\Views\UsersControls\Slide.xaml.cs:строка 66
+------------------------------------------------------------
+
+Date: 21 июня 2020 г. 23:50
+ Процесс не может получить доступ к файлу "D:\Course\Course\bin\Debug\database.db", так как этот файл используется другим процессом.
+Void WinIOError(Int32, System.String)
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в System.IO.File.OpenRead(String path)
+   в SecurityModule.Backup.<>c__DisplayClass15_0.<Start>b__0() в D:\Course\SecurityModule\Backup.cs:строка 68
+------------------------------------------------------------
+
+Date: 21 июня 2020 г. 23:51
+ file is not a database
+file is not a database
+System.Data.SQLite.SQLiteStatement Prepare(System.Data.SQLite.SQLiteConnection, System.String, System.Data.SQLite.SQLiteStatement, UInt32, System.String ByRef)
+   в System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   в System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   в System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   в System.Data.SQLite.SQLiteDataReader.NextResult()
+   в System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   в System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   в System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   в SQLiteQuery.SQL.Select.Post(String sql) в D:\Course\SQLiteQuery\SQL\Select.cs:строка 30
+   в SQLiteQuery.SQL.Select.GetChapters() в D:\Course\SQLiteQuery\SQL\Select.cs:строка 171
+   в Course.Views.UsersControls.Slide.LoadChapters() в D:\Course\Course\Views\UsersControls\Slide.xaml.cs:строка 66
+------------------------------------------------------------
+
+Date: 21 июня 2020 г. 23:51
+ Процесс не может получить доступ к файлу "D:\Course\Course\bin\Debug\database.db", так как этот файл используется другим процессом.
+Void WinIOError(Int32, System.String)
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в System.IO.File.OpenRead(String path)
+   в SecurityModule.Backup.<>c__DisplayClass15_0.<Start>b__0() в D:\Course\SecurityModule\Backup.cs:строка 68
+------------------------------------------------------------

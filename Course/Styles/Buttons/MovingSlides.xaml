@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Course.Styles.Buttons" xmlns:System="clr-namespace:System;assembly=mscorlib">
+    <System:Double x:Key="SizeBtn">40</System:Double>
+    
+    <Style x:Key="MovingSlideNext" TargetType="{x:Type Button}">
+        <Setter Property="Width" Value="{StaticResource SizeBtn}" />
+        <Setter Property="Height" Value="{StaticResource SizeBtn}" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="pack://siteoforigin:,,,/Resources/next.png" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="MovingSlideBack" TargetType="{x:Type Button}">
+        <Setter Property="Width" Value="{StaticResource SizeBtn}" />
+        <Setter Property="Height" Value="{StaticResource SizeBtn}" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="pack://siteoforigin:,,,/Resources/back.png" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

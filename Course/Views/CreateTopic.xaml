@@ -1,0 +1,25 @@
+﻿<Window x:Class="Course.Views.CreateTopic"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Course.Views"
+        mc:Ignorable="d"
+        Title="Создание Темы" Height="344.666" Width="469" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="20">
+            <Label x:Name="errorLbl"  Content="Поле 'глава' должно быть заполнено!" Visibility="Hidden" Foreground="Red" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+            <Label Content="Введите название темы" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <TextBox x:Name="chapterTxtBox" Background="White" />
+
+            <Label Content="Выберите в какой главе будет создана тема"  Margin="0 10 0 0" VerticalAlignment="Center" HorizontalAlignment="Center"  />
+            <ComboBox x:Name="comboboxChapter" IsEditable="True" IsReadOnly="True" SelectionChanged="Chapter_SelectionChanged" />
+
+            <Label x:Name="numberTopic" Content="Введите за какой темой будет распологаться новая тема"  Margin="0 10 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <ComboBox x:Name="comboboxtopics" IsEditable="True" IsReadOnly="True" />
+
+            <Button Content="Создать" HorizontalAlignment="Right" Margin="0 20" Click="Button_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

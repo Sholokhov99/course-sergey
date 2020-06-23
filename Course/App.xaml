@@ -1,0 +1,45 @@
+﻿<Application x:Class="Course.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Course"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles\GlobalVariables.xaml" />
+
+                <!-- Buttons -->
+                <ResourceDictionary Source="Styles\Buttons\MovingSlides.xaml" />
+                <ResourceDictionary Source="Styles\Buttons\MenuIcon.xaml" />
+                <ResourceDictionary Source="Styles\Buttons\Default.xaml" />
+                <ResourceDictionary Source="Styles\Buttons\FontAwersone.xaml" />
+
+                <!-- TextBox -->
+                <ResourceDictionary Source="Styles\TextBox\Default.xaml" />
+                <ResourceDictionary Source="Styles\TextBox\PersonalAccount.xaml" />
+
+                <!-- PasswordBox -->
+                <ResourceDictionary Source="Styles\PasswordBox\Default.xaml" />
+                <ResourceDictionary Source="Styles\PasswordBox\PersonalAccount.xaml" />
+
+                <!-- ToggleButton -->
+                <ResourceDictionary Source="Styles\ToggleButton\Default.xaml" />
+                <ResourceDictionary Source="Styles\ToggleButton\FontAwersome.xaml" />
+
+                <!-- Images -->
+                <ResourceDictionary Source="Styles\Images\Time.xaml" />
+
+                <!-- Default -->
+                <ResourceDictionary Source="Styles\Default.xaml" />
+                
+                
+                <ResourceDictionary Source="Styles\Tooltip\default.xaml" />
+
+
+                <ResourceDictionary Source="Styles\Label\FontAwersome.xaml" />
+
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

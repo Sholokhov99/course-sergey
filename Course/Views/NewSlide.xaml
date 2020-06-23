@@ -1,0 +1,14 @@
+﻿<Window x:Class="Course.Views.NewSlide"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Course.Views"
+        xmlns:uc="clr-namespace:Course.Views.UsersControls"
+        mc:Ignorable="d"
+        Title="Создание слайда" Height="450" Width="800" 
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen" 
+        WindowState="Maximized">
+    <uc:Slide x:Name="slide"/>
+</Window>

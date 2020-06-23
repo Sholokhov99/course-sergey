@@ -1,0 +1,139 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Course.Views.UsersControls"
+             xmlns:UsersControl="clr-namespace:Course.Views.UsersControls"
+             xmlns:vm="clr-namespace:Course.ViewModels"
+             xmlns:logic="clr-namespace:Course.Controllers"
+             xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Course.Views.UsersControls.Slide"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="Open_Executed" />
+        <CommandBinding Command="ApplicationCommands.SaveAs" Executed="SaveAs_Executed" />
+        <CommandBinding Command="ApplicationCommands.Save" Executed="Save_Executed" />
+    </UserControl.CommandBindings>
+    <DockPanel x:Name="dockPanel">
+        <ToolBar DockPanel.Dock="Top" x:Name="toolBar">
+            <Button Command="ApplicationCommands.Open" Style="{StaticResource BtnFontAwersone}" FontSize="{StaticResource FontSizeSlider}" Content="{StaticResource fa_open}" x:Name="open">
+                <Button.ToolTip>
+                    <ToolTip>Открытие файла из памяти компьютера</ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button Command="ApplicationCommands.Save" Content="{StaticResource fa_save}" x:Name="save" Style="{StaticResource BtnFontAwersone}" FontSize="{StaticResource FontSizeSlider}" >
+                <Button.ToolTip>
+                    <ToolTip>Сохранение изменений в базу данных</ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button Command="ApplicationCommands.SaveAs" Content="{StaticResource fa_save_as}" x:Name="saveAs" Style="{StaticResource BtnFontAwersone}" FontSize="{StaticResource FontSizeSlider}" >
+                <Button.ToolTip>
+                    <ToolTip>Сохранение изменений отдельным файлом на рабочем столе</ToolTip>
+                </Button.ToolTip>
+            </Button>
+
+            <!-- Начертание текста -->
+            <Separator />
+            <ToggleButton Command="EditingCommands.ToggleBold" x:Name="btnBold" Content="B" FontWeight="Bold" Style="{DynamicResource toggleBtnFontAwersome}" >
+                <ToggleButton.ToolTip>
+                    <ToolTip>
+                        Применение полужирного начертания к выделенному тексту
+                    </ToolTip>
+                </ToggleButton.ToolTip>
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.ToggleItalic" x:Name="btnItalic" Content="I" FontStyle="Italic" Style="{DynamicResource toggleBtnFontAwersome}" >
+                <ToggleButton.ToolTip>
+                    <ToolTip>
+                        Применение курсвного начертания к выделенному тексту
+                    </ToolTip>
+                </ToggleButton.ToolTip>
+            </ToggleButton>
+            <Separator />
+
+            <!-- Выравнивание текста-->
+            <ToggleButton Command="EditingCommands.AlignLeft" x:Name="btnLeftText" Content="{StaticResource fa_left_aligment}" Style="{DynamicResource toggleBtnFontAwersome}" >
+                <ToggleButton.ToolTip>
+                    <ToolTip>
+                        Применение выравнивания по правому краю к выделенному тексту
+                    </ToolTip>
+                </ToggleButton.ToolTip>
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.AlignCenter" x:Name="btnCenterText" Content="{StaticResource fa_center_aligment}" Style="{DynamicResource toggleBtnFontAwersome}">
+                <ToggleButton.ToolTip>
+                    <ToolTip>
+                        Применение выравнивания по центру к выделенному тексту
+                    </ToolTip>
+                </ToggleButton.ToolTip>
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.AlignRight" x:Name="btnRightText" Content="{StaticResource fa_right_aligment}" Style="{DynamicResource toggleBtnFontAwersome}" >
+                <ToggleButton.ToolTip>
+                    <ToolTip>
+                        Применение выравнивания по левопу краю к выделенному тексту
+                    </ToolTip>
+                </ToggleButton.ToolTip>
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.AlignJustify" x:Name="btnJustifyText" Content="{StaticResource fa_justify_aligment}" Style="{DynamicResource toggleBtnFontAwersome}" >
+                <ToggleButton.ToolTip>
+                    <ToolTip>
+                        Равномерное распределение текста между левыми и правыми краями
+                    </ToolTip>
+                </ToggleButton.ToolTip>
+            </ToggleButton>
+
+            <Separator />
+
+            <ToggleButton x:Name="btnSetImage" Content="{StaticResource fa_image}" VerticalAlignment="Center" Checked="btnSetImage_Checked" Style="{DynamicResource toggleBtnFontAwersome}" >
+                <ToggleButton.ToolTip>
+                    <ToolTip>
+                        Загрузка изоборажения
+                    </ToolTip>
+                </ToggleButton.ToolTip>
+            </ToggleButton>
+
+            <Separator />
+
+            <ComboBox x:Name="cmbFontFamily" Width="150" SelectionChanged="cmbFontFamily_SelectionChanged" >
+                <ComboBox.ToolTip>
+                    <ToolTip>
+                        Выбор новгого шрифта для текста
+                    </ToolTip>
+                </ComboBox.ToolTip>
+            </ComboBox>
+                <ComboBox x:Name="cmbFontSize" Width="50" IsEditable="True" TextBoxBase.TextChanged="cmbFontSize_TextChanged" >
+                <ComboBox.ToolTip>
+                    <ToolTip>
+                        Изменение размера текста
+                    </ToolTip>
+                </ComboBox.ToolTip>
+            </ComboBox>
+        </ToolBar>
+
+        <Grid x:Name="navigationGrid" DockPanel.Dock="Top" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="100*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Content="Глава" Grid.Row="0" Grid.Column="0"/>
+            <ComboBox x:Name="сhapter" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" IsEditable="True" SelectionChanged="сhapter_Selected" UseLayoutRounding="True" VerticalContentAlignment="Center" IsReadOnly="True" />
+            
+            <Label Content="Тема" Grid.Row="1" Grid.Column="0"/>
+            <ComboBox x:Name="topic" Grid.Row="1" Grid.Column="1" IsEditable="True" IsReadOnly="True" SelectionChanged="Topic_SelectionChange"/>
+            
+            <Label x:Name="typeSetSlide" Content="После слайда" Grid.Row="2" Grid.Column="0"/>
+            <ComboBox x:Name="slide" Grid.Row="2" Grid.Column="1" IsEditable="True" IsReadOnly="True"  SelectionChanged="Slide_SelectionChanged"/>
+        </Grid>
+        <RichTextBox x:Name="rtbEditor" OpacityMask="White"  >
+            <RichTextBox.Background>
+                <ImageBrush ImageSource="/Resources/logo-background.png" Stretch="Uniform"/>
+            </RichTextBox.Background>
+        </RichTextBox>
+    </DockPanel>
+</UserControl>

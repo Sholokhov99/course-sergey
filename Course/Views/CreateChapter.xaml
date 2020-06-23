@@ -1,0 +1,22 @@
+﻿<Window x:Class="Course.Views.CreateChapter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Course.Views"
+        mc:Ignorable="d"
+        Title="Создание главы" Height="288.333" Width="469" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="20">
+            <Label x:Name="errorLbl"  Content="Поле 'глава' должно быть заполнено!" Visibility="Hidden" Foreground="Red" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+            <Label x:Name="titleChapter" Content="Введите название главы" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <TextBox x:Name="chapterTxtBox" Background="White" />
+
+            <Label x:Name="nuberChapter" Content="Введите за какой главой будет распологаться новая глава"  Margin="0 10 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <ComboBox x:Name="combobox" IsEditable="True" IsReadOnly="True" />
+
+            <Button x:Name="btn" Content="Создать" HorizontalAlignment="Right" Margin="0 20" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

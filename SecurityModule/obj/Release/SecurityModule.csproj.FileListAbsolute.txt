@@ -1,0 +1,6 @@
+C:\Users\Daniil\source\repos\Course\SecurityModule\bin\Release\SecurityModule.dll
+C:\Users\Daniil\source\repos\Course\SecurityModule\bin\Release\SecurityModule.pdb
+C:\Users\Daniil\source\repos\Course\SecurityModule\obj\Release\SecurityModule.csprojAssemblyReference.cache
+C:\Users\Daniil\source\repos\Course\SecurityModule\obj\Release\SecurityModule.csproj.CoreCompileInputs.cache
+C:\Users\Daniil\source\repos\Course\SecurityModule\obj\Release\SecurityModule.dll
+C:\Users\Daniil\source\repos\Course\SecurityModule\obj\Release\SecurityModule.pdb

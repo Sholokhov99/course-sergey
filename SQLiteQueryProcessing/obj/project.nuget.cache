@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "xf4ftphiNqTw+ytT+lozLYx3pZ8VDgeGbSCKJnzTA1sk88W7u3AjcF2r2ycr+fI935CLoXRFpvPxNuSSADdsLg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Daniil\\source\\repos\\Course\\SQLiteQueryProcessing\\SQLiteQueryProcessing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Daniil\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Daniil\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Daniil\\.nuget\\packages\\system.data.sqlite.core\\1.0.112.2\\system.data.sqlite.core.1.0.112.2.nupkg.sha512"
+  ],
+  "logs": []
+}

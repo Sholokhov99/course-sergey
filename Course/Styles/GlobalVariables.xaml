@@ -1,0 +1,41 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Course.Styles" 
+                    xmlns:System="clr-namespace:System;assembly=mscorlib" 
+                    xmlns:Sys="http://schemas.microsoft.com/winfx/2006/xaml/composite-font">
+    
+    <System:Double x:Key="FontSizeTitle">28</System:Double>
+    <System:Double x:Key="FontSizeSlider">24</System:Double>
+    <System:Double x:Key="FontSizeLowercase">14</System:Double>
+
+    <System:Double x:Key="FontSizeFontAwersome">32</System:Double>
+
+    <SolidColorBrush x:Key="DefaultColor" Color="#0a638f"></SolidColorBrush>
+    <SolidColorBrush x:Key="DefaultColorLight" Color="#1078AC"></SolidColorBrush>
+    <SolidColorBrush x:Key="DefaultColorDark" Color="#0D5376"></SolidColorBrush>
+
+    <SolidColorBrush x:Key="DefaultColorInputBox" Color="#fff" />
+    <SolidColorBrush x:Key="DefaultColorInputBoxHover" Color="#C4C4C4" />
+    <SolidColorBrush x:Key="DefaultColorInputBoxFocused" Color="#9C9C9C" />
+
+    <!-- FontAwersome -->
+    <Sys:FontFamily x:Key="Fontawersone_fontfamily">pack://application:,,,/resources/#FontAwesome</Sys:FontFamily>
+    <System:String x:Key="fa_center_aligment"></System:String>
+    <System:String x:Key="fa_left_aligment"></System:String>
+    <System:String x:Key="fa_right_aligment"></System:String>
+    <System:String x:Key="fa_justify_aligment"></System:String>
+    <System:String x:Key="fa_save"></System:String>
+    <System:String x:Key="fa_save_as"></System:String>
+    <System:String x:Key="fa_open"></System:String>
+    <System:String x:Key="fa_image"></System:String>
+    <System:String x:Key="fa_chevron_circle_left"></System:String>
+    <System:String x:Key="fa_chevron_circle_right"></System:String>
+    <System:String x:Key="fa_clock"></System:String>
+    <System:String x:Key="fa_list_ul"></System:String>
+    <System:String x:Key="fa_file"></System:String>
+    <System:String x:Key="fa_elipsis"></System:String>
+    <System:String x:Key="fa_user"></System:String>
+    <System:String x:Key="fa_setting"></System:String>
+    <System:String x:Key="fa_eye"></System:String>
+    
+</ResourceDictionary>

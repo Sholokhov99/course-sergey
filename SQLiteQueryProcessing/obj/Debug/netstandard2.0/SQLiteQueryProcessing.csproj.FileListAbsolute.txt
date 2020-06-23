@@ -1,0 +1,9 @@
+C:\Users\Daniil\source\repos\Course\SQLiteQueryProcessing\bin\Debug\netstandard2.0\SQLiteQueryProcessing.deps.json
+C:\Users\Daniil\source\repos\Course\SQLiteQueryProcessing\bin\Debug\netstandard2.0\SQLiteQueryProcessing.dll
+C:\Users\Daniil\source\repos\Course\SQLiteQueryProcessing\obj\Debug\netstandard2.0\SQLiteQueryProcessing.csprojAssemblyReference.cache
+C:\Users\Daniil\source\repos\Course\SQLiteQueryProcessing\obj\Debug\netstandard2.0\SQLiteQueryProcessing.AssemblyInfoInputs.cache
+C:\Users\Daniil\source\repos\Course\SQLiteQueryProcessing\obj\Debug\netstandard2.0\SQLiteQueryProcessing.AssemblyInfo.cs
+C:\Users\Daniil\source\repos\Course\SQLiteQueryProcessing\obj\Debug\netstandard2.0\SQLiteQueryProcessing.csproj.CoreCompileInputs.cache
+C:\Users\Daniil\source\repos\Course\SQLiteQueryProcessing\bin\Debug\netstandard2.0\SQLiteQueryProcessing.pdb
+C:\Users\Daniil\source\repos\Course\SQLiteQueryProcessing\obj\Debug\netstandard2.0\SQLiteQueryProcessing.dll
+C:\Users\Daniil\source\repos\Course\SQLiteQueryProcessing\obj\Debug\netstandard2.0\SQLiteQueryProcessing.pdb
